@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Whatching ISS</title>
+   <link rel="stylesheet" href="style.css">
+   <meta name="viewport" content="width=1920">
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="ISS__container">
+         <div class="ISS__info-map">
+            <div class="ISS__location">
+               <div class="ISS__location__text">
+                  <p class="location__text">ISS is now located at:</p>
+                  <div class="location">
+                     <p class="location__latitude">latitude: <span id="location__lat"> 0.0000 </span></p>
+                     <p class="location__longitude">longitude: <span id="location__lon"> 0.0000 </span></p>
+                  </div>
+               </div>
+            </div>
+            <div class="ISS__map">
+               <div id="map" class="map">
+               </div>
+            </div>
+         </div>
+         <div class="ISS__info-people">
+            <div class="ISS__date">
+               <div class="ISS__date__text">
+                  <p class="date__UTC-time">Current UTC time: <span id="date__time">18:40</span></p>
+                  <p class="date__day">Tuesday, 17 Apr 2018</p>
+               </div>
+            </div>
+            <div class="ISS__people">
+               <div class="ISS__total-people">
+                  <p class="total-people">Total amount: <span class="people-count">6</span> people on ISS</p>
+               </div>
+               <div class="ISS__people__container">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="script.js"></script>
+   <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDO1Bu3euqYFJOhn_YkY-xtlBkB2ZHfMIw&callback=initMap&v=weekly"
+      async defer></script>
+</body>
+
+</html>

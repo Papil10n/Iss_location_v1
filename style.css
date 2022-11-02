@@ -1,0 +1,152 @@
+body {
+   padding-bottom: 50px;
+   background-color: rgb(0, 0, 0);
+   overflow-y: hidden;
+}
+.wrapper {
+   box-shadow: 0px 0px 5px rgb(255, 255, 255);
+   border-radius: 30px;
+   display: flex;
+   margin: 0 auto;
+   max-width: 1200px;
+   transition: all 0.4s ease 0s;
+   background-color:  rgb(31, 31, 31);
+   color: white;
+}
+.ISS__container {
+   width: 100%;
+   display: grid;
+   grid-template-columns:  7fr 2fr;
+}
+.ISS__info-map {
+   display: flex;
+   flex-direction: column;
+}
+.ISS__location {
+   border: 1px solid white;
+   margin: 10px;
+   padding: 5px;
+   font-size: 18px;
+   line-height: 8px;
+   border-radius: 10px;
+   padding-bottom: 15px;
+}
+.location__text {
+   font-weight: bold;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   font-size: 24px;
+   margin-left: 50px;
+   margin-right: 50px;
+   background-color: rgb(53, 53, 53);
+   display: inline-block;
+   padding: 15px;
+   border-radius: 10px;
+   border: 1px solid rgba(255, 255, 255, 0.322);
+}
+.location__text:hover {
+   cursor: default;
+}
+.location {
+   display: inline-block;
+   margin-left: 10px;
+   font-size: 20px;
+   text-align: right;
+}
+.location__latitude, .location__longitude {
+   display: inline-block;
+   background-color: rgb(53, 53, 53);
+   padding: 15px;
+   border-radius: 10px;
+   border-top: 1px solid white;
+   border-bottom: 1px solid white;
+   margin-inline: 30px;
+   transition: all 0.3s ease 0s;
+}
+.location__latitude:hover, .location__longitude:hover {
+   box-shadow: 0px 0px 10px white;
+   cursor:default;
+}
+.ISS__map {
+   margin: 0 auto;
+}
+.map {
+   width: 100%;
+   text-align: center;
+}
+#map {
+   height: 460px;
+   width: 912px;
+   border-radius: 10px;
+   border: 2px solid white;
+}
+.ISS__date {
+   border: 1px solid white;
+   margin: 10px;
+   padding: 5px;
+   font-size: 18px;
+   line-height: 12px;
+   border-radius: 10px;
+   margin-bottom: 53px;
+   height: 99px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.ISS__date:hover {
+   cursor: default;
+}
+.date__UTC-time {
+   font-weight: bold;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   color: aliceblue;
+}
+.date__day {
+   text-align: center;   
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   font-size: 16px;
+   color: aliceblue;
+}
+.ISS__people__container {
+   padding-bottom: 15px;
+   height: 350px;
+}
+.ISS__person {
+   border: 1px solid white;
+   border-radius: 10px;
+   display: flex;
+   margin: 3px 10px;
+   justify-content: space-around;
+   align-items: center;
+   height: 40px;
+   transition: all 0.3s ease 0s;
+   background-color: rgb(48, 48, 48);
+}
+.ISS__person:hover {
+   background-color: rgb(70, 70, 70);
+   cursor: default;
+}
+.ISS__person img {
+   width: 35px;
+   border: 1px solid rgb(255, 255, 255);
+   border-radius: 50%;
+   margin-right: 20px;
+}
+.person-name {
+   display: inline-block;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   letter-spacing: 0.5px;
+}
+.ISS__total-people {
+   text-align: center;
+   border: 1px solid white;
+   margin: 5px;
+   padding: 5px;
+   font-size: 18px;
+   line-height: 8px;
+   border-radius: 10px;
+   padding-bottom: 10px;
+   margin: 10px;
+}
+.ISS__total-people:hover {
+   cursor: default;
+}
